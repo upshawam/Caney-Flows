@@ -75,15 +75,14 @@
     /* Table wrapper */
     .table-wrap {
       overflow-x: auto;
-      border-radius: 8px;
+      border-radius: 6px;
       border: 1px solid #1e293b;
     }
 
     table {
       border-collapse: collapse;
       width: 100%;
-      min-width: 720px;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
 
     thead th {
@@ -91,7 +90,7 @@
       color: #cbd5e1;
       font-weight: 600;
       text-align: center;
-      padding: 0.55rem 0.75rem;
+      padding: 0.35rem 0.5rem;
       border-bottom: 2px solid #334155;
       white-space: nowrap;
       position: sticky;
@@ -101,40 +100,30 @@
 
     thead th:first-child {
       text-align: left;
-      min-width: 72px;
+      min-width: 52px;
     }
 
     tbody tr:nth-child(even) td { background-color: rgba(255,255,255,0.02); }
 
     tbody td {
       text-align: center;
-      padding: 0.45rem 0.6rem;
-      border-bottom: 1px solid #1e293b;
+      padding: 0.22rem 0.45rem;
+      border-bottom: 1px solid #1a2332;
       vertical-align: middle;
+      white-space: nowrap;
     }
 
     tbody td:first-child {
       font-weight: 600;
       color: #94a3b8;
       text-align: left;
-      padding-left: 0.9rem;
-      letter-spacing: 0.04em;
-    }
-
-    .cell-inner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1px;
+      padding-left: 0.6rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.03em;
     }
 
     .mw-val {
       font-weight: 600;
-    }
-
-    .unit-val {
-      font-size: 0.68rem;
-      color: #94a3b8;
     }
 
     /* Generation level colours */
@@ -212,12 +201,21 @@
     return mw >= threshold ? 'gen-hi' : 'gen-med';
   }
 
+  // Abbreviated dam labels for column headers
+  const DAM_ABBR = {
+    'Wolf Creek':    'Wolf Ck',
+    'Dale Hollow':   'Dale Hol',
+    'Cordell Hull':  'Cord Hull',
+    'Center Hill':   'Ctr Hill',
+    'Old Hickory':   'Old Hick',
+    'J Percy Priest':'J Percy',
+    'Cheatham':      'Cheatham',
+    'Barkley':       'Barkley',
+  };
+
   function formatTime(t) {
-    const h = parseInt(t.slice(0, 2), 10) % 24;
-    const m = t.slice(2);
-    const suffix = h < 12 ? 'AM' : 'PM';
-    const h12 = h === 0 ? 12 : h > 12 ? h - 12 : h;
-    return `${h12}:${m} ${suffix}`;
+    // Compact 24h, e.g. "09:00"
+    return t.slice(0, 2) + ':' + t.slice(2);
   }
 
   // Returns the current hour slot string, e.g. "1400"
@@ -265,7 +263,8 @@
       hrow.appendChild(th0);
       dams.forEach(dam => {
         const th = document.createElement('th');
-        th.textContent = dam;
+        th.textContent = DAM_ABBR[dam] || dam;
+        th.title = dam;
         hrow.appendChild(th);
       });
 
@@ -284,23 +283,15 @@
           if (!entry) { td.textContent = '—'; return; }
 
           const cls = cellClass(dam, entry.mw, entry.units);
-          const inner = document.createElement('div');
-          inner.className = 'cell-inner';
-
           const mwSpan = document.createElement('span');
           mwSpan.className = 'mw-val ' + cls;
-          mwSpan.textContent = entry.mw === 0 ? '—' : entry.mw + ' MW';
-
-          const unitSpan = document.createElement('span');
-          unitSpan.className = 'unit-val';
-          unitSpan.textContent =
-            entry.units === '0'       ? '' :
-            entry.units === 'unknown' ? 'gen' :
+          mwSpan.textContent = entry.mw === 0 ? '—' : entry.mw;
+          const unitLabel =
+            entry.units === '0'       ? '0 units' :
+            entry.units === 'unknown' ? 'generating' :
             entry.units + (entry.units === '1' ? ' unit' : ' units');
-
-          inner.appendChild(mwSpan);
-          if (unitSpan.textContent) inner.appendChild(unitSpan);
-          td.appendChild(inner);
+          td.title = `${dam}: ${entry.mw} MW — ${unitLabel}`;
+          td.appendChild(mwSpan);
         });
       });
 
