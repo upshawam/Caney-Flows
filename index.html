@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caney Flows — Generation Schedule</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 1.5rem;
+    }
+
+    header {
+      margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      color: #f8fafc;
+    }
+
+    header p {
+      margin-top: 0.35rem;
+      font-size: 0.82rem;
+      color: #94a3b8;
+    }
+
+    header a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    header a:hover { text-decoration: underline; }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.6rem;
+      font-size: 0.78rem;
+      color: #64748b;
+    }
+
+    .meta span { display: flex; align-items: center; gap: 0.3rem; }
+
+    /* Legend */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+      font-size: 0.75rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .legend-swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    /* Table wrapper */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid #1e293b;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 720px;
+      font-size: 0.8rem;
+    }
+
+    thead th {
+      background: #1e293b;
+      color: #cbd5e1;
+      font-weight: 600;
+      text-align: center;
+      padding: 0.55rem 0.75rem;
+      border-bottom: 2px solid #334155;
+      white-space: nowrap;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    thead th:first-child {
+      text-align: left;
+      min-width: 72px;
+    }
+
+    tbody tr:nth-child(even) td { background-color: rgba(255,255,255,0.02); }
+
+    tbody td {
+      text-align: center;
+      padding: 0.45rem 0.6rem;
+      border-bottom: 1px solid #1e293b;
+      vertical-align: middle;
+    }
+
+    tbody td:first-child {
+      font-weight: 600;
+      color: #94a3b8;
+      text-align: left;
+      padding-left: 0.9rem;
+      letter-spacing: 0.04em;
+    }
+
+    .cell-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1px;
+    }
+
+    .mw-val {
+      font-weight: 600;
+    }
+
+    .unit-val {
+      font-size: 0.68rem;
+      color: #94a3b8;
+    }
+
+    /* Generation level colours */
+    .gen-0   { color: #475569; }
+    .gen-low { color: #34d399; }   /* 1 unit */
+    .gen-med { color: #fbbf24; }   /* 2+ units, lower range */
+    .gen-hi  { color: #f97316; }   /* 2+ units, high MW */
+    .gen-unk { color: #a78bfa; }   /* unknown units */
+
+    /* Row highlight for "now" */
+    tr.now-row td { background-color: rgba(96,165,250,0.08) !important; }
+    tr.now-row td:first-child { color: #60a5fa; }
+
+    .error-msg {
+      padding: 2rem;
+      color: #f87171;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.72rem;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cumberland River Basin — Generation Schedule</h1>
+  <p>
+    Data scraped from
+    <a href="https://www.lrn-wc.usace.army.mil/preschedule.shtml" target="_blank" rel="noopener">
+      USACE LRN Pre-Schedule
+    </a>
+  </p>
+  <div class="meta">
+    <span id="fetched-at">Last updated: —</span>
+    <span id="local-time"></span>
+  </div>
+</header>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:#475569"></div> No generation (0 MW)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#34d399"></div> 1 unit</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#fbbf24"></div> 2+ units</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#f97316"></div> 2+ units (high MW)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#a78bfa"></div> Generating (units unknown)</div>
+</div>
+
+<div id="table-container">
+  <p style="color:#64748b;font-size:0.85rem;">Loading schedule…</p>
+</div>
+
+<footer>
+  Times are Central (CDT/CST) as published on the USACE schedule page. Data refreshes automatically every 30 minutes via GitHub Actions.
+</footer>
+
+<script>
+  const JSON_URL = 'data/generation_schedule.json';
+
+  // High-MW threshold per dam for colour escalation
+  const HIGH_MW = {
+    'Wolf Creek':   135,
+    'Center Hill':  100,
+    'Dale Hollow':   36,
+  };
+
+  function cellClass(dam, mw, units) {
+    if (mw === 0)            return 'gen-0';
+    if (units === 'unknown') return 'gen-unk';
+    if (units === '1')       return 'gen-low';
+    // 2+
+    const threshold = HIGH_MW[dam] ?? 0;
+    return mw >= threshold ? 'gen-hi' : 'gen-med';
+  }
+
+  function formatTime(t) {
+    const h = parseInt(t.slice(0, 2), 10) % 24;
+    const m = t.slice(2);
+    const suffix = h < 12 ? 'AM' : 'PM';
+    const h12 = h === 0 ? 12 : h > 12 ? h - 12 : h;
+    return `${h12}:${m} ${suffix}`;
+  }
+
+  // Returns the current hour slot string, e.g. "1400"
+  function currentSlot() {
+    const now = new Date();
+    const h = now.getHours();
+    return String(h === 0 ? 24 : h).padStart(2, '0') + '00';
+  }
+
+  async function load() {
+    const container = document.getElementById('table-container');
+    try {
+      const res = await fetch(JSON_URL + '?t=' + Date.now());
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      // Metadata
+      const fetchedEl = document.getElementById('fetched-at');
+      if (data.fetched_at_utc) {
+        const d = new Date(data.fetched_at_utc);
+        fetchedEl.textContent = 'Last updated: ' + d.toLocaleString(undefined, {
+          month: 'short', day: 'numeric', year: 'numeric',
+          hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+        });
+      }
+
+      document.getElementById('local-time').textContent =
+        'Your local time: ' + new Date().toLocaleTimeString(undefined, {
+          hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+        });
+
+      const dams = data.all_dams;
+      const schedules = data.schedules;
+      const times = schedules[dams[0]].map(e => e.time);
+      const slot = currentSlot();
+
+      // Build table
+      const table = document.createElement('table');
+
+      // thead
+      const thead = table.createTHead();
+      const hrow = thead.insertRow();
+      const th0 = document.createElement('th');
+      th0.textContent = 'Time';
+      hrow.appendChild(th0);
+      dams.forEach(dam => {
+        const th = document.createElement('th');
+        th.textContent = dam;
+        hrow.appendChild(th);
+      });
+
+      // tbody
+      const tbody = table.createTBody();
+      times.forEach(time => {
+        const tr = tbody.insertRow();
+        if (time === slot) tr.classList.add('now-row');
+
+        const tdTime = tr.insertCell();
+        tdTime.textContent = formatTime(time);
+
+        dams.forEach(dam => {
+          const entry = (schedules[dam] || []).find(e => e.time === time);
+          const td = tr.insertCell();
+          if (!entry) { td.textContent = '—'; return; }
+
+          const cls = cellClass(dam, entry.mw, entry.units);
+          const inner = document.createElement('div');
+          inner.className = 'cell-inner';
+
+          const mwSpan = document.createElement('span');
+          mwSpan.className = 'mw-val ' + cls;
+          mwSpan.textContent = entry.mw === 0 ? '—' : entry.mw + ' MW';
+
+          const unitSpan = document.createElement('span');
+          unitSpan.className = 'unit-val';
+          unitSpan.textContent =
+            entry.units === '0'       ? '' :
+            entry.units === 'unknown' ? 'gen' :
+            entry.units + (entry.units === '1' ? ' unit' : ' units');
+
+          inner.appendChild(mwSpan);
+          if (unitSpan.textContent) inner.appendChild(unitSpan);
+          td.appendChild(inner);
+        });
+      });
+
+      const wrap = document.createElement('div');
+      wrap.className = 'table-wrap';
+      wrap.appendChild(table);
+      container.innerHTML = '';
+      container.appendChild(wrap);
+
+    } catch (err) {
+      container.innerHTML = `<p class="error-msg">Failed to load schedule: ${err.message}</p>`;
+    }
+  }
+
+  load();
+</script>
+</body>
+</html>
