@@ -1,0 +1,42 @@
+<table class="table table-sm table-bordered table-hover text-center">
+                <thead>
+                <tr>
+                    <th scope="col">14Jul2026</th>
+                    <th scope="col">Wolf Creek</th>
+                    <th scope="col">Dale Hollow</th>
+                    <th scope="col">Cordell Hull</th>
+                    <th scope="col">Center Hill</th>
+                    <th scope="col">Old Hickory</th>
+                    <th scope="col">J Percy Priest</th>
+                    <th scope="col">Cheatham</th>
+                    <th scope="col">Barkley</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">0100</th><td>    0</td><td>    0</td><td>    0</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">0200</th><td>    0</td><td>    0</td><td>    0</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">0300</th><td>    0</td><td>    0</td><td>    0</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">0400</th><td>    0</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">0500</th><td>    0</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">0600</th><td>    0</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">0700</th><td>    0</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>    0</td></tr>
+                    <tr><th scope="row">0800</th><td>    0</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>    0</td></tr>
+                    <tr><th scope="row">0900</th><td>   45</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>    0</td></tr>
+                    <tr><th scope="row">1000</th><td>   45</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>    0</td></tr>
+                    <tr><th scope="row">1100</th><td>   45</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>    0</td></tr>
+                    <tr><th scope="row">1200</th><td>   45</td><td>   16</td><td>   66</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>    0</td></tr>
+                    <tr><th scope="row">1300</th><td>   90</td><td>   16</td><td>   66</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">1400</th><td>   90</td><td>   32</td><td>   66</td><td>   45</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">1500</th><td>   90</td><td>   32</td><td>   66</td><td>   90</td><td>   54</td><td>    0</td><td>   36</td><td>   35</td></tr>
+                    <tr><th scope="row">1600</th><td>  135</td><td>   32</td><td>   66</td><td>   90</td><td>   54</td><td>    0</td><td>   36</td><td>   35</td></tr>
+                    <tr><th scope="row">1700</th><td>  180</td><td>   46</td><td>   66</td><td>   90</td><td>   54</td><td>    0</td><td>   36</td><td>   35</td></tr>
+                    <tr><th scope="row">1800</th><td>  180</td><td>   46</td><td>   66</td><td>   90</td><td>   54</td><td>    0</td><td>   36</td><td>   35</td></tr>
+                    <tr><th scope="row">1900</th><td>  180</td><td>   46</td><td>   66</td><td>   90</td><td>   54</td><td>    0</td><td>   36</td><td>   35</td></tr>
+                    <tr><th scope="row">2000</th><td>  180</td><td>   32</td><td>   66</td><td>   45</td><td>   54</td><td>    0</td><td>   36</td><td>   35</td></tr>
+                    <tr><th scope="row">2100</th><td>  180</td><td>   32</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">2200</th><td>  135</td><td>   16</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">2300</th><td>   45</td><td>    0</td><td>   33</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">2400</th><td>    0</td><td>    0</td><td>    0</td><td>    0</td><td>   54</td><td>    0</td><td>   24</td><td>   35</td></tr>
+                    <tr><th scope="row">Totals</th><td> 1665</td><td>  346</td><td>  957</td><td>  540</td><td> 1296</td><td>    0</td><td>  648</td><td>  630</td></tr>
+                </tbody>
+            </table>
