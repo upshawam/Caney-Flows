@@ -216,31 +216,59 @@ def fetch_html():
     raise RuntimeError(f"Unable to fetch schedule page after {len(attempt_delays)} attempts: {last_error}")
 
 
+def load_existing_payload(path: Path):
+    if not path.exists():
+        return None
+
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+    required_keys = {"fetched_at_utc", "all_dams", "schedules"}
+    if not required_keys.issubset(payload.keys()):
+        return None
+
+    return payload
+
+
 def run():
-    html, source_url = fetch_html()
+    existing_payload = load_existing_payload(OUTPUT_PATH)
 
-    soup = BeautifulSoup(html, "html.parser")
-    table = find_schedule_table(soup)
-    rows = build_rows(table)
-    column_indexes = detect_column_indexes(rows)
-    schedules = parse_schedule(rows, column_indexes)
+    try:
+        html, source_url = fetch_html()
 
-    payload = {
-        "source_url": source_url,
-        "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
-        "classification_rules": {
-            "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
-            "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
-            "Dale Hollow": "14-18 MW = 1 unit; >18 MW = 2+ units",
-        },
-        "all_dams": DAMS,
-        "dam_column_indexes": column_indexes,
-        "schedules": schedules,
-    }
+        soup = BeautifulSoup(html, "html.parser")
+        table = find_schedule_table(soup)
+        rows = build_rows(table)
+        column_indexes = detect_column_indexes(rows)
+        schedules = parse_schedule(rows, column_indexes)
 
-    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    print(f"Wrote {OUTPUT_PATH}")
+        payload = {
+            "source_url": source_url,
+            "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
+            "classification_rules": {
+                "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
+                "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
+                "Dale Hollow": "14-18 MW = 1 unit; >18 MW = 2+ units",
+            },
+            "all_dams": DAMS,
+            "dam_column_indexes": column_indexes,
+            "schedules": schedules,
+        }
+
+        OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+        OUTPUT_PATH.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+        print(f"Wrote {OUTPUT_PATH}")
+    except Exception as exc:
+        if existing_payload is not None:
+            print(
+                "Warning: all source fetch attempts failed; "
+                f"keeping existing schedule from {existing_payload.get('fetched_at_utc', 'unknown')}"
+            )
+            print(f"Fetch/parse error: {exc}")
+            return
+        raise
 
 
 if __name__ == "__main__":
