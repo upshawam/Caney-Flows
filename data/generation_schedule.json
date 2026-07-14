@@ -1,0 +1,1007 @@
+{
+  "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
+  "fetched_at_utc": "2026-07-14T13:43:12.891161+00:00",
+  "classification_rules": {
+    "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
+    "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
+    "Dale Hollow": "14-18 MW = 1 unit; >18 MW = 2+ units"
+  },
+  "all_dams": [
+    "Wolf Creek",
+    "Dale Hollow",
+    "Cordell Hull",
+    "Center Hill",
+    "Old Hickory",
+    "J Percy Priest",
+    "Cheatham",
+    "Barkley"
+  ],
+  "dam_column_indexes": {
+    "Wolf Creek": 1,
+    "Dale Hollow": 2,
+    "Cordell Hull": 3,
+    "Center Hill": 4,
+    "Old Hickory": 5,
+    "J Percy Priest": 6,
+    "Cheatham": 7,
+    "Barkley": 8
+  },
+  "schedules": {
+    "Wolf Creek": [
+      {
+        "time": "0100",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0200",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0300",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0400",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0500",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0600",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0700",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0800",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0900",
+        "mw": 45,
+        "units": "1"
+      },
+      {
+        "time": "1000",
+        "mw": 45,
+        "units": "1"
+      },
+      {
+        "time": "1100",
+        "mw": 45,
+        "units": "1"
+      },
+      {
+        "time": "1200",
+        "mw": 45,
+        "units": "1"
+      },
+      {
+        "time": "1300",
+        "mw": 90,
+        "units": "2+"
+      },
+      {
+        "time": "1400",
+        "mw": 90,
+        "units": "2+"
+      },
+      {
+        "time": "1500",
+        "mw": 90,
+        "units": "2+"
+      },
+      {
+        "time": "1600",
+        "mw": 135,
+        "units": "2+"
+      },
+      {
+        "time": "1700",
+        "mw": 180,
+        "units": "2+"
+      },
+      {
+        "time": "1800",
+        "mw": 180,
+        "units": "2+"
+      },
+      {
+        "time": "1900",
+        "mw": 180,
+        "units": "2+"
+      },
+      {
+        "time": "2000",
+        "mw": 180,
+        "units": "2+"
+      },
+      {
+        "time": "2100",
+        "mw": 180,
+        "units": "2+"
+      },
+      {
+        "time": "2200",
+        "mw": 135,
+        "units": "2+"
+      },
+      {
+        "time": "2300",
+        "mw": 45,
+        "units": "1"
+      },
+      {
+        "time": "2400",
+        "mw": 0,
+        "units": "0"
+      }
+    ],
+    "Dale Hollow": [
+      {
+        "time": "0100",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0200",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0300",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0400",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0500",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0600",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0700",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0800",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0900",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1000",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1100",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1200",
+        "mw": 16,
+        "units": "1"
+      },
+      {
+        "time": "1300",
+        "mw": 16,
+        "units": "1"
+      },
+      {
+        "time": "1400",
+        "mw": 32,
+        "units": "2+"
+      },
+      {
+        "time": "1500",
+        "mw": 32,
+        "units": "2+"
+      },
+      {
+        "time": "1600",
+        "mw": 32,
+        "units": "2+"
+      },
+      {
+        "time": "1700",
+        "mw": 46,
+        "units": "2+"
+      },
+      {
+        "time": "1800",
+        "mw": 46,
+        "units": "2+"
+      },
+      {
+        "time": "1900",
+        "mw": 46,
+        "units": "2+"
+      },
+      {
+        "time": "2000",
+        "mw": 32,
+        "units": "2+"
+      },
+      {
+        "time": "2100",
+        "mw": 32,
+        "units": "2+"
+      },
+      {
+        "time": "2200",
+        "mw": 16,
+        "units": "1"
+      },
+      {
+        "time": "2300",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "2400",
+        "mw": 0,
+        "units": "0"
+      }
+    ],
+    "Cordell Hull": [
+      {
+        "time": "0100",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0200",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0300",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0400",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "0500",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "0600",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "0700",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "0800",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "0900",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "1000",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "1100",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "1200",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "1300",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "1400",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "1500",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "1600",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "1700",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "1800",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "1900",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "2000",
+        "mw": 66,
+        "units": "unknown"
+      },
+      {
+        "time": "2100",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "2200",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "2300",
+        "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "2400",
+        "mw": 0,
+        "units": "unknown"
+      }
+    ],
+    "Center Hill": [
+      {
+        "time": "0100",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0200",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0300",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0400",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0500",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0600",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0700",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0800",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "0900",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1000",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1100",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1200",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1300",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1400",
+        "mw": 45,
+        "units": "1"
+      },
+      {
+        "time": "1500",
+        "mw": 90,
+        "units": "2+"
+      },
+      {
+        "time": "1600",
+        "mw": 90,
+        "units": "2+"
+      },
+      {
+        "time": "1700",
+        "mw": 90,
+        "units": "2+"
+      },
+      {
+        "time": "1800",
+        "mw": 90,
+        "units": "2+"
+      },
+      {
+        "time": "1900",
+        "mw": 90,
+        "units": "2+"
+      },
+      {
+        "time": "2000",
+        "mw": 45,
+        "units": "1"
+      },
+      {
+        "time": "2100",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "2200",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "2300",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "2400",
+        "mw": 0,
+        "units": "0"
+      }
+    ],
+    "Old Hickory": [
+      {
+        "time": "0100",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "0200",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "0300",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "0400",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "0500",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "0600",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "0700",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "0800",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "0900",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1000",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1100",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1200",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1300",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1400",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1500",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1600",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1700",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1800",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "1900",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "2000",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "2100",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "2200",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "2300",
+        "mw": 54,
+        "units": "unknown"
+      },
+      {
+        "time": "2400",
+        "mw": 54,
+        "units": "unknown"
+      }
+    ],
+    "J Percy Priest": [
+      {
+        "time": "0100",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0200",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0300",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0400",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0500",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0600",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0700",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0800",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0900",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1000",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1100",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1200",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1300",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1400",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1500",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1600",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1700",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1800",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1900",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "2000",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "2100",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "2200",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "2300",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "2400",
+        "mw": 0,
+        "units": "unknown"
+      }
+    ],
+    "Cheatham": [
+      {
+        "time": "0100",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "0200",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "0300",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "0400",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "0500",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "0600",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "0700",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "0800",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "0900",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "1000",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "1100",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "1200",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "1300",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "1400",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "1500",
+        "mw": 36,
+        "units": "unknown"
+      },
+      {
+        "time": "1600",
+        "mw": 36,
+        "units": "unknown"
+      },
+      {
+        "time": "1700",
+        "mw": 36,
+        "units": "unknown"
+      },
+      {
+        "time": "1800",
+        "mw": 36,
+        "units": "unknown"
+      },
+      {
+        "time": "1900",
+        "mw": 36,
+        "units": "unknown"
+      },
+      {
+        "time": "2000",
+        "mw": 36,
+        "units": "unknown"
+      },
+      {
+        "time": "2100",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "2200",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "2300",
+        "mw": 24,
+        "units": "unknown"
+      },
+      {
+        "time": "2400",
+        "mw": 24,
+        "units": "unknown"
+      }
+    ],
+    "Barkley": [
+      {
+        "time": "0100",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "0200",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "0300",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "0400",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "0500",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "0600",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "0700",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0800",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "0900",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1000",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1100",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1200",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "1300",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "1400",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "1500",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "1600",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "1700",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "1800",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "1900",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "2000",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "2100",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "2200",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "2300",
+        "mw": 35,
+        "units": "unknown"
+      },
+      {
+        "time": "2400",
+        "mw": 35,
+        "units": "unknown"
+      }
+    ]
+  }
+}
