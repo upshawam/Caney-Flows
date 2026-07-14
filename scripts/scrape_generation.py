@@ -1,6 +1,8 @@
 import json
 import os
+import random
 import re
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -164,16 +166,17 @@ def fetch_html():
             raise RuntimeError(f"SOURCE_HTML_PATH does not exist: {path}")
         return path.read_text(encoding="utf-8"), f"file://{path}"
 
-    retry = Retry(
-        total=5,
+    # Inner urllib3 retry handles transient HTTP errors (5xx, 429).
+    # Outer manual loop handles connection-level failures (timeouts, resets)
+    # with the longer backoff windows needed when the host is intermittently
+    # unreachable.
+    http_retry = Retry(
+        total=2,
         backoff_factor=1,
         status_forcelist=(429, 500, 502, 503, 504),
         allowed_methods=("GET",),
+        raise_on_status=False,
     )
-
-    session = requests.Session()
-    session.mount("https://", HTTPAdapter(max_retries=retry))
-    session.mount("http://", HTTPAdapter(max_retries=retry))
 
     headers = {
         "User-Agent": (
@@ -184,17 +187,33 @@ def fetch_html():
     }
 
     urls = [URL, URL.replace("https://", "http://")]
+
+    # Delays between attempts: immediate, 30-60 s, 2-3 min, 5-8 min.
+    # Using random jitter within each range to avoid thundering-herd on
+    # the USACE server when the Action runner retries at fixed intervals.
+    attempt_delays = [0, random.uniform(30, 60), random.uniform(120, 180), random.uniform(300, 480)]
+
     last_error = None
+    for attempt, delay in enumerate(attempt_delays, start=1):
+        if delay:
+            print(f"Attempt {attempt}: waiting {delay:.0f}s before retry…")
+            time.sleep(delay)
 
-    for candidate in urls:
-        try:
-            response = session.get(candidate, timeout=30, headers=headers)
-            response.raise_for_status()
-            return response.text, candidate
-        except requests.RequestException as exc:
-            last_error = exc
+        session = requests.Session()
+        session.mount("https://", HTTPAdapter(max_retries=http_retry))
+        session.mount("http://", HTTPAdapter(max_retries=http_retry))
 
-    raise RuntimeError(f"Unable to fetch schedule page: {last_error}")
+        for candidate in urls:
+            try:
+                print(f"Attempt {attempt}: fetching {candidate}")
+                response = session.get(candidate, timeout=30, headers=headers)
+                response.raise_for_status()
+                return response.text, candidate
+            except requests.RequestException as exc:
+                last_error = exc
+                print(f"Attempt {attempt} failed ({candidate}): {exc}")
+
+    raise RuntimeError(f"Unable to fetch schedule page after {len(attempt_delays)} attempts: {last_error}")
 
 
 def run():
