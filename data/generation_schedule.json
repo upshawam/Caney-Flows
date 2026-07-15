@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
-  "fetched_at_utc": "2026-07-15T03:11:24.230077+00:00",
+  "fetched_at_utc": "2026-07-15T05:51:00.840870+00:00",
   "classification_rules": {
     "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
     "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
@@ -70,8 +70,8 @@
       },
       {
         "time": "0900",
-        "mw": 45,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1000",
@@ -145,8 +145,8 @@
       },
       {
         "time": "2400",
-        "mw": 0,
-        "units": "0"
+        "mw": 45,
+        "units": "1"
       }
     ],
     "Dale Hollow": [
@@ -207,23 +207,23 @@
       },
       {
         "time": "1200",
-        "mw": 16,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1300",
+        "mw": 0,
+        "units": "0"
+      },
+      {
+        "time": "1400",
         "mw": 16,
         "units": "1"
       },
       {
-        "time": "1400",
-        "mw": 32,
-        "units": "2+"
-      },
-      {
         "time": "1500",
-        "mw": 32,
-        "units": "2+"
+        "mw": 16,
+        "units": "1"
       },
       {
         "time": "1600",
@@ -232,12 +232,12 @@
       },
       {
         "time": "1700",
-        "mw": 46,
+        "mw": 32,
         "units": "2+"
       },
       {
         "time": "1800",
-        "mw": 46,
+        "mw": 32,
         "units": "2+"
       },
       {
@@ -247,28 +247,28 @@
       },
       {
         "time": "2000",
-        "mw": 32,
+        "mw": 46,
         "units": "2+"
       },
       {
         "time": "2100",
-        "mw": 32,
+        "mw": 46,
         "units": "2+"
       },
       {
         "time": "2200",
-        "mw": 16,
-        "units": "1"
+        "mw": 32,
+        "units": "2+"
       },
       {
         "time": "2300",
-        "mw": 0,
-        "units": "0"
+        "mw": 32,
+        "units": "2+"
       },
       {
         "time": "2400",
-        "mw": 0,
-        "units": "0"
+        "mw": 16,
+        "units": "1"
       }
     ],
     "Cordell Hull": [
@@ -289,7 +289,7 @@
       },
       {
         "time": "0400",
-        "mw": 33,
+        "mw": 0,
         "units": "unknown"
       },
       {
@@ -324,7 +324,7 @@
       },
       {
         "time": "1100",
-        "mw": 33,
+        "mw": 66,
         "units": "unknown"
       },
       {
