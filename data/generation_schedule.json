@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
-  "fetched_at_utc": "2026-07-24T01:41:04.714710+00:00",
+  "fetched_at_utc": "2026-07-24T04:39:16.324390+00:00",
   "classification_rules": {
     "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
     "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
