@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
-  "fetched_at_utc": "2026-07-28T01:39:32.019208+00:00",
+  "fetched_at_utc": "2026-07-28T06:01:09.807417+00:00",
   "classification_rules": {
     "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
     "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
@@ -75,8 +75,8 @@
       },
       {
         "time": "1000",
-        "mw": 45,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1100",
@@ -125,12 +125,12 @@
       },
       {
         "time": "2000",
-        "mw": 135,
+        "mw": 180,
         "units": "2+"
       },
       {
         "time": "2100",
-        "mw": 90,
+        "mw": 135,
         "units": "2+"
       },
       {
@@ -140,8 +140,8 @@
       },
       {
         "time": "2300",
-        "mw": 45,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2400",
@@ -202,8 +202,8 @@
       },
       {
         "time": "1100",
-        "mw": 16,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1200",
@@ -252,8 +252,8 @@
       },
       {
         "time": "2100",
-        "mw": 16,
-        "units": "1"
+        "mw": 32,
+        "units": "2+"
       },
       {
         "time": "2200",
@@ -329,32 +329,32 @@
       },
       {
         "time": "1200",
-        "mw": 0,
+        "mw": 33,
         "units": "unknown"
       },
       {
         "time": "1300",
-        "mw": 0,
+        "mw": 66,
         "units": "unknown"
       },
       {
         "time": "1400",
-        "mw": 0,
+        "mw": 66,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": 33,
+        "mw": 96,
         "units": "unknown"
       },
       {
         "time": "1600",
-        "mw": 33,
+        "mw": 96,
         "units": "unknown"
       },
       {
         "time": "1700",
-        "mw": 66,
+        "mw": 96,
         "units": "unknown"
       },
       {
@@ -369,27 +369,27 @@
       },
       {
         "time": "2000",
-        "mw": 96,
-        "units": "unknown"
-      },
-      {
-        "time": "2100",
-        "mw": 96,
-        "units": "unknown"
-      },
-      {
-        "time": "2200",
-        "mw": 96,
-        "units": "unknown"
-      },
-      {
-        "time": "2300",
         "mw": 66,
         "units": "unknown"
       },
       {
-        "time": "2400",
+        "time": "2100",
         "mw": 33,
+        "units": "unknown"
+      },
+      {
+        "time": "2200",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "2300",
+        "mw": 0,
+        "units": "unknown"
+      },
+      {
+        "time": "2400",
+        "mw": 0,
         "units": "unknown"
       }
     ],
@@ -466,12 +466,12 @@
       },
       {
         "time": "1500",
-        "mw": 45,
-        "units": "1"
+        "mw": 90,
+        "units": "2+"
       },
       {
         "time": "1600",
-        "mw": 90,
+        "mw": 135,
         "units": "2+"
       },
       {
@@ -486,13 +486,13 @@
       },
       {
         "time": "1900",
-        "mw": 135,
+        "mw": 90,
         "units": "2+"
       },
       {
         "time": "2000",
-        "mw": 90,
-        "units": "2+"
+        "mw": 45,
+        "units": "1"
       },
       {
         "time": "2100",
@@ -578,32 +578,32 @@
       },
       {
         "time": "1300",
-        "mw": 25,
+        "mw": 50,
         "units": "unknown"
       },
       {
         "time": "1400",
-        "mw": 25,
+        "mw": 75,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": 50,
+        "mw": 75,
         "units": "unknown"
       },
       {
         "time": "1600",
-        "mw": 50,
+        "mw": 75,
         "units": "unknown"
       },
       {
         "time": "1700",
-        "mw": 50,
+        "mw": 75,
         "units": "unknown"
       },
       {
         "time": "1800",
-        "mw": 50,
+        "mw": 75,
         "units": "unknown"
       },
       {
@@ -623,7 +623,7 @@
       },
       {
         "time": "2200",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
@@ -812,17 +812,17 @@
       },
       {
         "time": "1100",
-        "mw": 12,
+        "mw": 24,
         "units": "unknown"
       },
       {
         "time": "1200",
-        "mw": 12,
+        "mw": 24,
         "units": "unknown"
       },
       {
         "time": "1300",
-        "mw": 12,
+        "mw": 24,
         "units": "unknown"
       },
       {
@@ -832,7 +832,7 @@
       },
       {
         "time": "1500",
-        "mw": 36,
+        "mw": 24,
         "units": "unknown"
       },
       {
@@ -852,22 +852,22 @@
       },
       {
         "time": "1900",
-        "mw": 24,
+        "mw": 36,
         "units": "unknown"
       },
       {
         "time": "2000",
-        "mw": 24,
+        "mw": 36,
         "units": "unknown"
       },
       {
         "time": "2100",
-        "mw": 12,
+        "mw": 36,
         "units": "unknown"
       },
       {
         "time": "2200",
-        "mw": 12,
+        "mw": 24,
         "units": "unknown"
       },
       {
@@ -914,47 +914,47 @@
       },
       {
         "time": "0700",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0800",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0900",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1000",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1100",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1200",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1300",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1400",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": 0,
+        "mw": 35,
         "units": "unknown"
       },
       {
