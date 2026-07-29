@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
-  "fetched_at_utc": "2026-07-29T04:37:26.633942+00:00",
+  "fetched_at_utc": "2026-07-29T06:03:56.924437+00:00",
   "classification_rules": {
     "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
     "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
@@ -90,7 +90,7 @@
       },
       {
         "time": "1300",
-        "mw": 180,
+        "mw": 135,
         "units": "2+"
       },
       {
@@ -120,7 +120,7 @@
       },
       {
         "time": "1900",
-        "mw": 180,
+        "mw": 225,
         "units": "2+"
       },
       {
@@ -456,8 +456,8 @@
       },
       {
         "time": "1300",
-        "mw": 45,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1400",
@@ -491,8 +491,8 @@
       },
       {
         "time": "2000",
-        "mw": 45,
-        "units": "1"
+        "mw": 90,
+        "units": "2+"
       },
       {
         "time": "2100",
@@ -568,12 +568,12 @@
       },
       {
         "time": "1100",
-        "mw": 25,
+        "mw": 50,
         "units": "unknown"
       },
       {
         "time": "1200",
-        "mw": 25,
+        "mw": 50,
         "units": "unknown"
       },
       {
@@ -608,7 +608,7 @@
       },
       {
         "time": "1900",
-        "mw": 50,
+        "mw": 75,
         "units": "unknown"
       },
       {
@@ -862,7 +862,7 @@
       },
       {
         "time": "2100",
-        "mw": 36,
+        "mw": 24,
         "units": "unknown"
       },
       {
