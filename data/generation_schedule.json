@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
-  "fetched_at_utc": "2026-08-04T11:21:35.379476+00:00",
+  "fetched_at_utc": "2026-08-04T12:14:53.513541+00:00",
   "classification_rules": {
     "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
     "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
@@ -30,366 +30,366 @@
     "Wolf Creek": [
       {
         "time": "0100",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0200",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0300",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0400",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0500",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0600",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0700",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0800",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0900",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1000",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1100",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1200",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1300",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1400",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1500",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1600",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1700",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1800",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1900",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2000",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2100",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2200",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2300",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2400",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       }
     ],
     "Dale Hollow": [
       {
         "time": "0100",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0200",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0300",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0400",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0500",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0600",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0700",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0800",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0900",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1000",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1100",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1200",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1300",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1400",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1500",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1600",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1700",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1800",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1900",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2000",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2100",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2200",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2300",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "2400",
-        "mw": null,
-        "units": "unknown"
+        "mw": 0,
+        "units": "0"
       }
     ],
     "Cordell Hull": [
       {
         "time": "0100",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0200",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0300",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0400",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0500",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0600",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0700",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0800",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0900",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1000",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1100",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1200",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1300",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1400",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1600",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1700",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1800",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1900",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2000",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2100",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2200",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2300",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2400",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       }
     ],
@@ -518,488 +518,488 @@
     "Old Hickory": [
       {
         "time": "0100",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0200",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0300",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0400",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0500",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0600",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0700",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0800",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0900",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1000",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1100",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1200",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1300",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1400",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1600",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1700",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1800",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "1900",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "2000",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "2100",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "2200",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "2300",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "2400",
-        "mw": null,
+        "mw": 25,
         "units": "unknown"
       }
     ],
     "J Percy Priest": [
       {
         "time": "0100",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0200",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0300",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0400",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0500",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0600",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0700",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0800",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0900",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1000",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1100",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1200",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1300",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1400",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1600",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1700",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1800",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "1900",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2000",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2100",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2200",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2300",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "2400",
-        "mw": null,
+        "mw": 0,
         "units": "unknown"
       }
     ],
     "Cheatham": [
       {
         "time": "0100",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "0200",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "0300",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "0400",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "0500",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "0600",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "0700",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "0800",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "0900",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1000",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1100",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1200",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1300",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1400",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1600",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1700",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1800",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "1900",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "2000",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "2100",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "2200",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "2300",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       },
       {
         "time": "2400",
-        "mw": null,
+        "mw": 12,
         "units": "unknown"
       }
     ],
     "Barkley": [
       {
         "time": "0100",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0200",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0300",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0400",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0500",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0600",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0700",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0800",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "0900",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1000",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1100",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1200",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1300",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1400",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1600",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1700",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1800",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "1900",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "2000",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "2100",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "2200",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "2300",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       },
       {
         "time": "2400",
-        "mw": null,
+        "mw": 35,
         "units": "unknown"
       }
     ]
