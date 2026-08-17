@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
-  "fetched_at_utc": "2026-08-17T04:48:22.113841+00:00",
+  "fetched_at_utc": "2026-08-17T05:17:42.228151+00:00",
   "classification_rules": {
     "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
     "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
@@ -252,13 +252,13 @@
       },
       {
         "time": "2100",
-        "mw": 32,
-        "units": "2+"
+        "mw": 16,
+        "units": "1"
       },
       {
         "time": "2200",
-        "mw": 0,
-        "units": "0"
+        "mw": 16,
+        "units": "1"
       },
       {
         "time": "2300",
@@ -334,7 +334,7 @@
       },
       {
         "time": "1300",
-        "mw": 33,
+        "mw": 66,
         "units": "unknown"
       },
       {
@@ -518,42 +518,42 @@
     "Old Hickory": [
       {
         "time": "0100",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0200",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0300",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0400",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0500",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0600",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0700",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "0800",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
@@ -767,7 +767,7 @@
       },
       {
         "time": "0200",
-        "mw": 24,
+        "mw": 12,
         "units": "unknown"
       },
       {
@@ -827,32 +827,32 @@
       },
       {
         "time": "1400",
-        "mw": 36,
+        "mw": 24,
         "units": "unknown"
       },
       {
         "time": "1500",
-        "mw": 36,
+        "mw": 24,
         "units": "unknown"
       },
       {
         "time": "1600",
-        "mw": 36,
+        "mw": 24,
         "units": "unknown"
       },
       {
         "time": "1700",
-        "mw": 36,
+        "mw": 24,
         "units": "unknown"
       },
       {
         "time": "1800",
-        "mw": 36,
+        "mw": 24,
         "units": "unknown"
       },
       {
         "time": "1900",
-        "mw": 36,
+        "mw": 24,
         "units": "unknown"
       },
       {
