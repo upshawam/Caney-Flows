@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
-  "fetched_at_utc": "2026-09-04T04:42:24.677570+00:00",
+  "fetched_at_utc": "2026-09-04T05:18:51.477651+00:00",
   "classification_rules": {
     "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
     "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
@@ -55,13 +55,13 @@
       },
       {
         "time": "0600",
-        "mw": 0,
-        "units": "0"
+        "mw": 45,
+        "units": "1"
       },
       {
         "time": "0700",
-        "mw": 0,
-        "units": "0"
+        "mw": 45,
+        "units": "1"
       },
       {
         "time": "0800",
@@ -95,27 +95,27 @@
       },
       {
         "time": "1400",
-        "mw": 220,
+        "mw": 175,
         "units": "2+"
       },
       {
         "time": "1500",
-        "mw": 265,
+        "mw": 220,
         "units": "2+"
       },
       {
         "time": "1600",
-        "mw": 265,
+        "mw": 220,
         "units": "2+"
       },
       {
         "time": "1700",
-        "mw": 265,
+        "mw": 220,
         "units": "2+"
       },
       {
         "time": "1800",
-        "mw": 265,
+        "mw": 220,
         "units": "2+"
       },
       {
@@ -135,8 +135,8 @@
       },
       {
         "time": "2200",
-        "mw": 0,
-        "units": "0"
+        "mw": 45,
+        "units": "1"
       },
       {
         "time": "2300",
@@ -309,17 +309,17 @@
       },
       {
         "time": "0800",
-        "mw": 0,
+        "mw": 33,
         "units": "unknown"
       },
       {
         "time": "0900",
-        "mw": 33,
+        "mw": 63,
         "units": "unknown"
       },
       {
         "time": "1000",
-        "mw": 33,
+        "mw": 63,
         "units": "unknown"
       },
       {
@@ -461,13 +461,13 @@
       },
       {
         "time": "1400",
-        "mw": 45,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1500",
-        "mw": 90,
-        "units": "2+"
+        "mw": 45,
+        "units": "1"
       },
       {
         "time": "1600",
@@ -486,13 +486,13 @@
       },
       {
         "time": "1900",
-        "mw": 45,
-        "units": "1"
+        "mw": 90,
+        "units": "2+"
       },
       {
         "time": "2000",
-        "mw": 0,
-        "units": "0"
+        "mw": 45,
+        "units": "1"
       },
       {
         "time": "2100",
