@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.lrn-wc.usace.army.mil/preschedule.shtml",
-  "fetched_at_utc": "2026-10-24T04:43:02.337635+00:00",
+  "fetched_at_utc": "2026-10-24T05:16:56.838085+00:00",
   "classification_rules": {
     "Wolf Creek": "40-50 MW = 1 unit; >50 MW = 2+ units",
     "Center Hill": "45-55 MW = 1 unit; >55 MW = 2+ units",
@@ -60,23 +60,23 @@
       },
       {
         "time": "0700",
-        "mw": 130,
-        "units": "2+"
+        "mw": 45,
+        "units": "1"
       },
       {
         "time": "0800",
-        "mw": 130,
-        "units": "2+"
+        "mw": 45,
+        "units": "1"
       },
       {
         "time": "0900",
-        "mw": 130,
-        "units": "2+"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1000",
-        "mw": 45,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1100",
@@ -105,8 +105,8 @@
       },
       {
         "time": "1600",
-        "mw": 45,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1700",
@@ -115,23 +115,23 @@
       },
       {
         "time": "1800",
-        "mw": 130,
+        "mw": 90,
         "units": "2+"
       },
       {
         "time": "1900",
-        "mw": 130,
+        "mw": 90,
         "units": "2+"
       },
       {
         "time": "2000",
-        "mw": 130,
+        "mw": 90,
         "units": "2+"
       },
       {
         "time": "2100",
-        "mw": 45,
-        "units": "1"
+        "mw": 90,
+        "units": "2+"
       },
       {
         "time": "2200",
@@ -182,18 +182,18 @@
       },
       {
         "time": "0700",
-        "mw": 16,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0800",
-        "mw": 16,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "0900",
-        "mw": 16,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1000",
@@ -232,8 +232,8 @@
       },
       {
         "time": "1700",
-        "mw": 16,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1800",
@@ -252,8 +252,8 @@
       },
       {
         "time": "2100",
-        "mw": 0,
-        "units": "0"
+        "mw": 16,
+        "units": "1"
       },
       {
         "time": "2200",
@@ -294,12 +294,12 @@
       },
       {
         "time": "0500",
-        "mw": 33,
+        "mw": 0,
         "units": "unknown"
       },
       {
         "time": "0600",
-        "mw": 33,
+        "mw": 0,
         "units": "unknown"
       },
       {
@@ -374,12 +374,12 @@
       },
       {
         "time": "2100",
-        "mw": 66,
+        "mw": 33,
         "units": "unknown"
       },
       {
         "time": "2200",
-        "mw": 33,
+        "mw": 0,
         "units": "unknown"
       },
       {
@@ -481,8 +481,8 @@
       },
       {
         "time": "1800",
-        "mw": 45,
-        "units": "1"
+        "mw": 0,
+        "units": "0"
       },
       {
         "time": "1900",
@@ -608,12 +608,12 @@
       },
       {
         "time": "1900",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
         "time": "2000",
-        "mw": 50,
+        "mw": 25,
         "units": "unknown"
       },
       {
@@ -979,22 +979,22 @@
       },
       {
         "time": "2000",
-        "mw": 20,
+        "mw": 55,
         "units": "unknown"
       },
       {
         "time": "2100",
-        "mw": 20,
+        "mw": 55,
         "units": "unknown"
       },
       {
         "time": "2200",
-        "mw": 20,
+        "mw": 55,
         "units": "unknown"
       },
       {
         "time": "2300",
-        "mw": 20,
+        "mw": 55,
         "units": "unknown"
       },
       {
